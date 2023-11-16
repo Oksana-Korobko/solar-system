@@ -1,0 +1,61 @@
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,auto);
+    gap: 10px 20px;
+    background-color: $dark2;
+    width: 100%;
+    padding: 20px 0;
+    & div{
+        padding: 10px;
+        align-self: center;
+        justify-self: center;
+        min-width: 150px;
+        border: 1px solid $grey;
+        border-radius: 10px;
+        &:hover{
+            cursor: pointer;
+            color: $gold;
+            border-color:  $gold;
+        }
+    }
+}
+.main {
+    background-color: $dark;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    padding: 10px;
+    & h2 {
+        font-family: $text-accent;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 30px;
+        color: $gold;
+    };
+    & .content{
+        padding: 10px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: row;
+        width: 100%;        
+        margin: 10px;
+        gap: 20px;
+
+       
+        & .img {
+            width: min(40%, 400px);
+            height: 150px;
+            padding-top: 20px;
+            background-image: url('..//../img/solar.jpg');
+            background-size: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border: 1px solid $gold; 
+        }
+    }
+}
