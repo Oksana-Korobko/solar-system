@@ -108,6 +108,8 @@ body {
 
 #loader.show {
   display: block;
+  padding-left: 46%;
+  padding-top: 25px;
 }
 
 .header {
@@ -150,13 +152,16 @@ body {
 }
 
 .main {
-  background-color: #2F3148;
   width: 100%;
-  min-height: 50px;
+  min-height: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.63) 29%, rgba(0, 0, 0, 0.65) 30%, rgb(0, 0, 0) 100%), url("..//../img/solar.jpg");
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .main h2 {
   font-family: "Roboto Slab", serif;
@@ -179,9 +184,4 @@ body {
   width: min(40%, 400px);
   height: 150px;
   padding-top: 20px;
-  background-image: url("..//../img/solar.jpg");
-  background-size: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border: 1px solid gold;
 }/*# sourceMappingURL=main.css.map */
